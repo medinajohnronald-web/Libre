@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Valentine’s Invitation</title>
+  <title>PangLibreInv</title>
   <style>
     body {
       font-family: "Georgia", serif;
@@ -88,8 +88,8 @@
     <button onclick="goToPart2()">Enter</button>
   </div>  <!-- Part 2: Valentine Question with Runaway No -->  <div class="card" id="part2">
     <h1 id="valentineQuestion"> Mang Libre ka?,</h1>
-    <button class="yesBtn" onclick="nextPart('celebration')">Yes 🥰</button>
-    <button id="noBtn">No 🙄</button>
+    <button class="yesBtn" onclick="nextPart('celebration')">Yes 🥹</button>
+    <button id="noBtn">No 😾</button>
   </div>  <!-- Part 3: Funny “Are you sure?” -->  <div class="card" id="part3">
     <h1 id="funnyQuestion">Pag syurrr ba? <span id="funnyName"></span>? 🤨</h1>
     <p>huna hunaag tarong kay... panagsa raraba ka mag birthday🙄...</p>
@@ -97,13 +97,13 @@
     <button onclick="nextPart('part4')">Still No 🙂‍↔️</button>
   </div>  <!-- Part 4: Last Chance (Shrinking No & Growing Yes) -->  <div class="card" id="part4">
     <h1>Can't say no, <span id="lastChanceName"></span>...😏</h1>
-    <p> Try Your Best💅🏻💅🏻 </p>
-    <button class="yesBtn" id="growingYes" onclick="nextPart('part5')">YES 💖</button>
-    <button id="shrinkingNo">no...</button>
+    <p> Try Your Best in saying no💅🏻💅🏻 </p>
+    <button class="yesBtn" id="growingYes" onclick="nextPart('part5')">YES 😤</button>
+    <button id="shrinkingNo">🖕🏻</button>
   </div>  <!-- Part 5: Celebration -->  <div class="card" id="part5">
     <h1>🎉 Yay! 🎉</h1>
     <p id="celebrationMsg"></p>
-    <p>Yaaaayyy, Ga expect kog 1KG of fries, 2 ka burger, nya usa ka Pizza 🍕 </p>
+    <p>Yaaaayyy, thank you thank you thank you (bisag napugsan) </p>
   </div>  <script>
     let userName = "";
 
@@ -112,7 +112,7 @@
       userName = nameField || "";
       document.getElementById("funnyName").innerText = userName;
       document.getElementById("lastChanceName").innerText = userName;
-      document.getElementById("valentineQuestion").innerText = `Mang libre ka? ${userName}🌹`;
+      document.getElementById("valentineQuestion").innerText = `Mang libre ka? ${userName}🙏🏻`;
       nextPart('part2');
     }
 
